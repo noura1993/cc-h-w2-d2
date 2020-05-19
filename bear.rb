@@ -12,7 +12,9 @@ class Bear
     end
 
     def eat_fish_from_a_river(river)
-        @stomach.push(river.supply_fish())
+        if (river.count_fish != 0)
+            @stomach.push(river.supply_fish())
+        end
     end
 
 end

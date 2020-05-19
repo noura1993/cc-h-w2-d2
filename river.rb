@@ -14,4 +14,8 @@ class River
         @fish.push(fish)
     end
 
+    def supply_fish()
+        return @fish.pop()
+    end
+
 end
